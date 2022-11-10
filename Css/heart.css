@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style: none;
+    box-sizing: inherit;
+}
+
+#bgImg {
+    position: fixed;
+    /* z-index: -1; */
+    top: 0;
+    bottom: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: .25;
+    background-color: lightblue;
+}
+
+#bgImg img {
+    display: block;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 0 auto 0 auto;
+}

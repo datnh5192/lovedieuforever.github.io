@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a503937af.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Css/main.css">
+    <title>Love You 3000</title>
+</head>
+
+<body>
+
+    <script src="../js/click.js"></script>
+    <div id="main">
+
+        <canvas id="canvas"></canvas>
+
+        <div id="loveQuestion">
+            <h1>
+                Do you love me, darling?
+                <i class="fa-solid fa-face-kiss-wink-heart"></i>
+            </h1>
+        </div>
+
+        <div id="loveAnswer">
+            <button id="btnYes" onclick="goToLoveHeart()">
+                Yêu anh lắm cơ:3
+                <i class="fa-solid fa-face-kiss-wink-heart"></i>
+            </button>
+
+            <button id="btnNo" onmouseover="noHover()">
+                Anh mơ à
+                <i class="fa-solid fa-face-smile"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="modal" class="alert open">
+        <div class="modal_container">
+            <div class="modal_container_img">
+                <img src="../Imgs/images.jfif" alt="">
+            </div>
+            <div class="modal_container_content">
+                <h1>
+                    Hello my lover
+                    <i class="fa-solid fa-face-kiss-beam"></i>
+                </h1>
+                <div class="question">
+                    Answer my question if you wanna see my "love heart"
+                </div>
+                <div class="btn close_modal">
+                    Dạ:3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('.close_modal');
+        const modal = document.querySelector('.alert')
+        function closeModal() {
+            modal.classList.add('close')
+        }
+        btn.addEventListener('click', closeModal)
+    </script>
+
+</body>
+
+</html>
